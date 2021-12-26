@@ -67,7 +67,7 @@ const Intern = () => {
               <h1>My Internships</h1>
             </Container>
           </div>
-          <div className="internship-content-body ">
+          <div className="internship-content-body "> 
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={50}
