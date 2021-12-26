@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Montserrat:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Roboto:wght@100&display=swap");
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --font-family-p: "Arimo", sans-serif;
+  --font-size-title-big: 62px;
+  --line-spacing-title-big: 75px;
+  --font-size-title-medium: 48px;
+  --line-spacing-title-medium: 60px;
+  --font-size-title-small: 36px;
+  --font-size-p-medium: 16px;
+  --line-spacing-p-medium: 24px;
+  --font-size-p-small: 14px;
+  --line-spacing-p-small: 24px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
 }

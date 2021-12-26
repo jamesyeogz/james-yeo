@@ -1,0 +1,119 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  align-items: center;
+  padding: 0;
+  top: 0;
+  /* background: rgba(255,255,255,0.2) */
+}
+
+.navbar-menu {
+  padding: 0 1rem 0 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-drawer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-top:1rem;
+}
+
+.link-scroll {
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.header {
+  flex-direction: column;
+}
+.header-top {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20vh;
+}
+.header-bottom {
+  flex: 2;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+.header-content {
+  flex: 1;
+  text-align: center;
+}
+.header-content h1 {
+  font-size: var(--font-size-title-big);
+  line-height: var(--line-spacing-title-big);
+}
+.header-content h3 {
+  font-size: var(--font-size-p-medium);
+}
+
+.header-img {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+.about-content-1 {
+  text-align: center;
+  margin-top: -2rem;
+  padding-bottom: 2rem;
+}
+.about-content-1 h1 {
+  font-size: var(--font-size-title-medium);
+}
+.about-content-2 {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-content-row {
+  flex: 1;
+  height: 50vh;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  display: absolute;
+}
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+.background-image:hover{
+    backdrop-filter: blur(6px); 
+    filter: blur(6px);
+    transition: 0.5s ease;
+}
+.footer-content-row h1 {
+  font-size: var(--font-size-title-small);
+  margin-top: -200px;
+  filter: blur(0px);
+}
