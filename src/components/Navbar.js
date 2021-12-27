@@ -1,34 +1,26 @@
+import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
-  HamburgerIcon,
-  MoonIcon,
-  Search2Icon,
-  SearchIcon,
-  SunIcon,
-} from "@chakra-ui/icons";
-import {
-  Box,
   IconButton,
-  LightMode,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
-} from "@chakra-ui/react";
-import React, { useState } from "react";
+} from "@chakra-ui/react"; 
+import React from "react";
 import "./components.css";
-import { Link as LinkR } from "react-router-dom";
+import { Link as LinkR } from "react-router-dom"; 
 import { Link as LinkS } from "react-scroll";
 
-const Navbar = (props) => {
-  const Light = props.Light
-  const handleLight = props.handleLight
+const Navbar = (props) => { 
+  const Light = props.Light;
+  const handleLight = props.handleLight;
   return (
-    <div className="navbar navbar-container">
+    <div className="navbar navbar-container"> 
       <div className="navbar-menu">
-        <h1>James Yeo </h1>
+        <h1>James Yeo </h1> 
       </div>
 
-      <div className="navbar-drawer" style={{color : 'black'}}>
+      <div className="navbar-drawer" style={{ color: "black" }}>
         <IconButton
           aria-label="Light/Dark Theme"
           icon={Light ? <SunIcon /> : <MoonIcon />}

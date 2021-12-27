@@ -1,14 +1,14 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import "./Case.css";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import DIP from '../components/img/DIP.png'
-import DIP2 from '../components/img/DIP2.png'
-import DIP3 from '../components/img/DIP3.png' 
+import DIP from "../components/img/DIP.png";
+import DIP2 from "../components/img/DIP2.png";
+import DIP3 from "../components/img/DIP3.png";
 import { Case_Studies_Extract } from "../components/Feature/Wording";
 
-const Animate_case = (props) => {
+const Animation_ = (props) => {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const boxAnimation3 = {
     onscreen: {
@@ -77,21 +77,15 @@ const Animate_case = (props) => {
   useEffect(() => {
     console.log("use effect hook, inView", inView);
   });
-  const contents = props.contents
-  const title = props.title
+  const contents = props.contents;
+  const title = props.title;
   const list_map = contents.map((content) => <li>{content}</li>);
   return (
-  
     <motion.div className="section case-content-animate">
-      
       <div className="case-content-left">
         <Container>
-
-       
-        <h1>{title}</h1>
-        <ul>
-          {list_map}
-        </ul>
+          <h1>{title}</h1>
+          <ul>{list_map}</ul>
         </Container>
       </div>
       <motion.div
@@ -101,25 +95,23 @@ const Animate_case = (props) => {
         animate={inView ? "onscreen" : "offscreen"}
       >
         <motion.div className="box1" variants={boxAnimation1}>
-          <img src={DIP} />
-
+          <img src={DIP} alt="DIP" />
         </motion.div>
-        <motion.div className="box2" variants={boxAnimation2} >
-        <img src={DIP2} />
+        <motion.div className="box2" variants={boxAnimation2}>
+          <img src={DIP2} alt="DIP" />
         </motion.div>
-        <motion.div className="box3" variants={boxAnimation3} >
-        <img src={DIP3} />
+        <motion.div className="box3" variants={boxAnimation3}>
+          <img src={DIP3} alt="DIP" />
         </motion.div>
       </motion.div>
     </motion.div>
-   
   );
 };
 
 const Case = () => {
-  const contents = Case_Studies_Extract.content
-  const title = Case_Studies_Extract.title
- 
+  const contents = Case_Studies_Extract.content;
+  const title = Case_Studies_Extract.title;
+
   return (
     <div id="Case Studies" className="section-header">
       <Container maxW="container.xl">
@@ -130,8 +122,7 @@ const Case = () => {
             </Container>
           </div>
 
-          <Animate_case title={title} contents={contents}/>
-
+          <Animation_ title={title} contents={contents} />
         </div>
       </Container>
     </div>

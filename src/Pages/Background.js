@@ -1,19 +1,19 @@
 import React from 'react'
 import { Canvas, useLoader, useFrame } from "@react-three/fiber";
-import { Html, OrbitControls, Sky, Stars } from "@react-three/drei";
+import { Html, Sky, Stars } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { Suspense, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimationMixer } from "three";
 import './Background.css'
-const Birds = (props) => {
-  const x_position= props.x_start
-  const y_position = props.y_start
+const Birds = () => {
+  // const x_position= props.x_start
+  // const y_position = props.y_start
   const Model_Bird = useLoader(GLTFLoader, "./birds/scene.gltf");
   const mesh = useRef();
   const [start] = useState(() => Math.random() * 5000);
   const initial = {
-    x: x_position,
-    y: y_position,
+    x: -10, 
+    y: 0,
   }; 
   const [mixer] = useState(() => new AnimationMixer());
   useEffect(
@@ -25,7 +25,7 @@ const Birds = (props) => {
       mesh.current.position.z = 60;
     } else {
       mesh.current.position.z -= 0.1;
-    }
+    } 
     mesh.current.position.x =
       initial.x + Math.sin(start + state.clock.elapsedTime) * 3;
     mesh.current.position.y =
@@ -60,10 +60,10 @@ const Background = (props, {children}) => {
         <Birds x_start={-10} y_start={0}/>
         
       </Canvas >
-        </div>
+        </div> 
     
 
     )
 }
 
-export default Background
+export default Background 

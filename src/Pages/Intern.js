@@ -1,11 +1,11 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import React, { Suspense, useState } from "react";
+import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Internship_Extract } from "../components/Feature/Wording";
@@ -14,7 +14,6 @@ import Lidar from "../components/img/Lidar.jpg";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "@react-three/drei";
-import { AmbientLight } from "three";
 import Background_image from "../components/img/Sky.jpg";
 
 const WorkSpace = () => {
@@ -77,7 +76,7 @@ const Intern = () => {
               <SwiperSlide>
                 <div className="Swiper-container"> 
                   <h1>1.{title}</h1>
-                  <img src={Lidar} />
+                  <img src={Lidar} alt="Lidar"/>
                   <div className="Swiper-container-content">{mapping} </div>
                 </div>
               </SwiperSlide>

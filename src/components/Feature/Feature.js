@@ -1,15 +1,7 @@
 import React from "react";
 import "./Feature.css";
-import { motion } from "framer-motion";
 
 
-const Feature2 = () => {
-  return (
-    <div>
-      <p>Hello This works</p>
-    </div>
-  );
-};
 export const Feature = (props) => {
   const smallLine = props.smallLine
   const content = props.content
@@ -25,7 +17,7 @@ export const Feature = (props) => {
   // }
   // const content = props.content;
   const title = props.title;
-  const textColor = props.textColor
+  // const textColor = props.textColor
   return (
     <div className="feature-content">
       <div className="feature-content-header ">
@@ -55,7 +47,7 @@ export const Feature = (props) => {
 };
 
 export const Feature_static = (props) => {
-  const textColor = props.textColor
+  // const textColor = props.textColor
   const smallLine = props.smallLine
   const content = props.content
   // const content =[

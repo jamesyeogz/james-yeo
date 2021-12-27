@@ -6,7 +6,6 @@ import About from "./About";
 import Background from "./Background";
 
 import Case from "./Case";
-import Intern from "./Intern";
 
 const Home = () => {
   const [Light, setLight] = useState(true);
