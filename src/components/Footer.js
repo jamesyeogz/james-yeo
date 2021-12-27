@@ -9,7 +9,7 @@ const Footer = () => {
       
       <div className="footer">
         <div className="footer-content-row">
-          <a href="/">
+          <a href="/james-yeo">
             <div className="background-image" style={{ backgroundImage: `url(${background_Home})` }}></div>
             <h1>Home</h1>
           </a>
@@ -17,7 +17,7 @@ const Footer = () => {
         <div
           className="footer-content-row"
         >
-          <a href="/">
+          <a href="/james-yeo">
           <div className="background-image" style={{ backgroundImage: `url(${background_Case})` }}></div>
           <h1>Case Studies</h1>
           </a>
@@ -26,7 +26,7 @@ const Footer = () => {
         <div
           className="footer-content-row"
         >
-          <a href="/Internships">
+          <a href="/james-yeo/Internships">
           <div className="background-image" style={{ backgroundImage: `url(${background_Intern})` }}></div>
             <h1>Internships</h1>
           </a>

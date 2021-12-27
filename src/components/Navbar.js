@@ -37,7 +37,7 @@ const Navbar = (props) => {
           />
           <MenuList>
             <MenuItem>
-              <LinkR className="link-scroll" to="/">
+              <LinkR className="link-scroll" to="/james-yeo/">
                 Home
               </LinkR>
             </MenuItem>
@@ -47,7 +47,7 @@ const Navbar = (props) => {
               </LinkS>
             </MenuItem>
             <MenuItem>
-              <LinkR className="link-scroll" to="/Internships">
+              <LinkR className="link-scroll" to="/james-yeo/Internships">
                 Internships
               </LinkR>
             </MenuItem>
